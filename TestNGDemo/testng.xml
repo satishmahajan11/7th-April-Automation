@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="ProjectTestSuite" thread-count="2" parallel="methods" >
+
+    <test name="LogicalTest1">
+        <classes>
+            <class name="com.maveric.project.suite.ProjectTestSuiteConfig" />
+            <class name="com.maveric.project.tests.SampleTestA"/>
+            <class name="com.maveric.project.tests.SampleTestB"/>
+            <class name="com.maveric.project.tests.LogicalTest1Config"/>
+        </classes>
+    </test>
+
+    <test name="LogicalTest2">
+        <classes>
+            <class name="com.maveric.project.tests.SampleTestC"/>
+            <class name="com.maveric.project.tests.SampleTestD"/>
+        </classes>
+    </test>
+</suite>
